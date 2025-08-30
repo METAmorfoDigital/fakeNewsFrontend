@@ -20,18 +20,27 @@
 }
 
 /* Estilo base de tarjetas */
+
 .card {
   background: rgba(36, 32, 64, 0.4);
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 20px;
   backdrop-filter: blur(15px);
   -webkit-backdrop-filter: blur(15px);
-  padding: 20px;
+  padding: 10px;
   box-shadow: 0 8px 32px rgba(0,0,0,0.37);
   transition: transform 0.2s ease-out;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
+   align-items: stretch;   /* ✅ hace que los hijos ocupen 100% */
+  
+  
+}.card2{
+  background: rgba(216, 214, 232, 0);
+  border: none;
+  box-shadow: none;
+  
 }
 
 /* Hover efecto 3D */
@@ -59,11 +68,11 @@
     grid-column: auto !important;
     grid-row: auto !important;
   }
-  .card1 { order: 2; }   /* aparecerá segundo */
+  .card1 { order: 5; }   /* aparecerá segundo */
   .card2 { order: 1; }   /* aparecerá primero */
   .card3 { order: 3; }
   .card4 { order: 4; }
-  .card5 { order: 5; }
+  .card5 { order: 2; }
   .card6 { order: 6; }
   .card7 { order: 7; }
   .card8 { order: 8; }
