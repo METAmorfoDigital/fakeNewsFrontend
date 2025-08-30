@@ -1,0 +1,23 @@
+<div id="weather-widget" [ngClass]="widgetClass">
+        
+        <!-- Parte Izquierda: Icono y Temperatura -->
+        <div class="widget-left">
+            <div id="weather-icon">
+                <!-- El contenido del icono (SVG de carga o img) se manejará a través de la propiedad 'weatherIconHTML' -->
+                <div [innerHTML]="weatherIconHTML"></div>
+            </div>
+            <h1 id="temperature" [innerHTML]="temperature"></h1>
+        </div>
+
+        <!-- Parte Derecha: Descripción, Hora, Fecha y Ubicación -->
+        <div class="widget-right">
+            <p id="description">{{ description }}</p>
+            <div id="time">
+                <span id="time-main">{{ timeMain }}</span><span id="time-seconds">{{ timeSeconds }}</span>
+            </div>
+            <p id="date">{{ date }}</p>
+            <p id="location">{{ location }}</p>
+            
+        </div>
+
+    </div>

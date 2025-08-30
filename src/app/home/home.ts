@@ -3,9 +3,11 @@ import { Header } from '../layout/header/header';
 import { NewsVerifier } from '../pages/news-verifier/news-verifier';
 import { VerifiedNews } from '../pages/verified-news/verified-news';
 import { CardInstructions } from "../components/card-instructions/card-instructions";
+import { Widget } from '../components/widget/widget';
+
 @Component({
   selector: 'app-home',
-  imports: [Header, NewsVerifier, VerifiedNews, CardInstructions],
+  imports: [Header, NewsVerifier, VerifiedNews, CardInstructions, Widget],
   templateUrl: './home.html',
   styleUrl: './home.scss'
 })

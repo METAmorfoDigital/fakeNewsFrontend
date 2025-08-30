@@ -1,33 +1,35 @@
   .instructions {
-    padding: 1.8rem;
     
     h3 {
       font-family: var(--font-display);
       font-size: 1.4rem;
-      margin-bottom: 1.5rem;
+      text-align: center;
+      margin-bottom: 1.2rem;
       color: var(--primary-color);
     }
 
     ol {
       padding-left: 1.8rem;
-      line-height: 1.8;
+      line-height: 1.4;
       margin-bottom: 1.5rem;
       
       li {
-        margin-bottom: 0.8rem;
-        font-size: 1.05rem;
+        margin-bottom: 0.3rem;
+        font-size: 1rem;
         
         strong {
-          color: var(--accent-color);
+          color: #d4af37;
         }
       }
     }
 
     .note {
-      background: #f9f9f9;
+    border-radius: 15px;
+    padding: 2px 15px;
+      background: #f9f9f927;
       border-left: 3px solid var(--accent-color);
-      padding: 1rem 1.5rem;
       font-size: 0.95rem;
       font-style: italic;
+      font-family: Times New Roman;
     }
   }
