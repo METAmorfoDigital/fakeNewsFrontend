@@ -1,14 +1,48 @@
 <section class="section verifier-section">
-<h2 class="section-title">Verificador de Noticias</h2>
-  
-  <div class="card verifier-box">
-    <div class="input-header">
-      <h3>Analiza una noticia</h3>
-      
+  <ng-container *ngIf="!loading; else cargando">
+
+    <h2 class="section-title">Verificador de Noticias</h2>
+
+    <!-- Si no hay resultado, mostramos la caja para ingresar la noticia -->
+    <div *ngIf="!resultado" class="card verifier-box">
+      <div class="input-header">
+        <h3>Analiza una noticia</h3>
+      </div>
+
+      <textarea 
+        class="news-input" 
+        [(ngModel)]="noticiaTexto" 
+        placeholder="Copia y pega aquí el texto de la noticia que deseas verificar...">
+      </textarea>
+
+      <button class="button" (click)="verificar()">
+         Verificar Noticia <span class="icon">🔍</span>
+      </button>
     </div>
-    <textarea class="news-input" placeholder="Copia y pega aquí el texto de la noticia que deseas verificar..."></textarea>
-    <button class="button verify-button">
-       Verificar Noticia<span class="icon">🔍</span>
-    </button>
-  </div>
+
+    <!-- Mostrar resultado -->
+    <div *ngIf="resultado" class="resultado">
+      <h3>Resultado</h3>
+      <p><strong>Veredicto:</strong> {{ resultado.veredicto }}</p>
+      <p><strong>Score:</strong> {{ resultado.score }}</p>
+      <p><strong>Razonamiento:</strong> {{ resultado.razonamiento }}</p>
+      <p *ngIf="resultado.fuenteCoincidente">
+        <strong>Fuente:</strong> 
+        <a [href]="resultado.fuenteCoincidente" target="_blank">{{ resultado.fuenteCoincidente }}</a>
+      </p>
+
+      <!-- Botón para reiniciar y verificar otra noticia -->
+      <button class="button" (click)="reiniciar()">
+        Verificar otra noticia
+      </button>
+    </div>
+
+  </ng-container>
+
+  <!-- Loading -->
+  <ng-template #cargando>
+    <div class="loading">
+      <p>Cargando…</p>
+    </div>
+  </ng-template>
 </section>

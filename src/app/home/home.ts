@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { Header } from '../layout/header/header';
 import { NewsVerifier } from '../pages/news-verifier/news-verifier';
-
+import { VerifiedNews } from '../pages/verified-news/verified-news';
+import { CardInstructions } from "../components/card-instructions/card-instructions";
 @Component({
   selector: 'app-home',
-  imports: [Header, NewsVerifier],
+  imports: [Header, NewsVerifier, VerifiedNews, CardInstructions],
   templateUrl: './home.html',
   styleUrl: './home.scss'
 })

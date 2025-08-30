@@ -7,7 +7,7 @@ section{
     position: relative;
     width: 100%;
     height: auto;
-
+ max-width: 700px;
     border:  1px solid #ccc;
     box-sizing: border-box;
     flex-direction: column;
@@ -15,14 +15,13 @@ section{
 }
 .news-input {
     
-    
     width: 100%;
       min-height: 190px;
       padding: 1rem;
       border: none;
       font-family: var(--font-serif);
       font-size: 1.05rem;
-      resize: vertical;
+      resize: none;
       outline: none;
       background: #fcfcfc;
       border-bottom: 1px solid var(--border-color);
@@ -33,6 +32,25 @@ box-sizing: border-box;
         font-style: italic;
       }
     }
+ng-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    margin-top: 10px;
+}
+.resultado{
+    box-sizing: border-box;
+    width: 100%;
+}
+.resultado a {
+  word-break: break-all; /* corta palabras largas si es necesario */
+  overflow-wrap: anywhere; /* alternativa moderna */
+  color: #007bff;
+  text-decoration: underline;
+}
+
 
 .button{
     
