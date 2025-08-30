@@ -1,0 +1,55 @@
+.anuncio-card {
+  border: 1px dashed #0d6efd;
+  border-radius: 12px;
+  text-align: center;
+  padding: 20px;
+  background: hsla(0, 0%, 100%, 0.047);
+  transition: transform 0.3s ease;
+}
+
+
+
+.anuncio-card h3 {
+  margin-bottom: 10px;
+  color: #0d6efd;
+}
+
+.anuncio-card .precio {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #d7d0d0;
+  margin: 10px 0;
+}
+
+.anuncio-card .botones {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.anuncio-card .btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 14px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  background: #0d6efd;
+  color: #fff;
+  transition: background 0.3s ease;
+}
+
+.anuncio-card .btn:hover {
+  background: #084298;
+}
+
+.anuncio-card .btn.whatsapp {
+  background: #25d366;
+}
+
+.anuncio-card .btn.whatsapp:hover {
+  background: #1c9c4b;
+}
