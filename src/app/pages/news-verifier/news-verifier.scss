@@ -7,26 +7,31 @@ section{
     position: relative;
     width: 100%;
     height: auto;
- max-width: 700px;
+    max-width: 700px;
     //border:  1px solid #ccc;
     box-sizing: border-box;
     flex-direction: column;
     display: flex;
+    
+    
+}
+h2 ,h3{
+    margin-bottom: 15px;
 }
 .news-input {
-    
+    margin-bottom: 20px;
     width: 100%;
-      min-height: 190px;
-      padding: 1rem;
-      border: none;
-      font-family: var(--font-serif);
-      font-size: 1.05rem;
-      resize: none;
-      outline: none;
-      background: #fcfcfc;
-      border-bottom: 1px solid var(--border-color);
-box-sizing: border-box;
-        border-radius: 10px;
+    min-height: 190px;
+    padding: 1rem;
+    border: none;
+    font-family: var(--font-serif);
+    font-size: 1.05rem;
+    resize: none;
+    outline: none;
+    background: #fcfcfc;
+    border-bottom: 1px solid var(--border-color);
+    box-sizing: border-box;
+    border-radius: 10px;
       &::placeholder {
         color: #999;
         font-style: italic;
@@ -53,7 +58,7 @@ ng-container{
 
 
 .button{
-    
+    text-align: center;
     display: flex;
     padding:5px 10px;
     background-color: #fcfcfc20;
