@@ -1,0 +1,21 @@
+<div class="crypto-container" *ngIf="!loading; else cargando">
+  <div class="crypto-card" *ngFor="let coin of cryptos">
+    <img [src]="coin.image" [alt]="coin.name" class="crypto-logo">
+    <div class="crypto-info">
+      <div class="crypto-details">
+        <h3>{{ coin.name }} </h3>
+        <p>{{ coin.symbol.toUpperCase() }}</p>
+      </div>
+      <div class="crypto-price">
+        <p>{{ coin.current_price | number:'1.2-2' }}</p>
+        <p [ngClass]="{'positive': coin.price_change_percentage_24h >= 0, 'negative': coin.price_change_percentage_24h < 0}">
+          {{ coin.price_change_percentage_24h | number:'1.2-2' }}%
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<ng-template #cargando>
+  <p>Cargando criptomonedas...</p>
+</ng-template>

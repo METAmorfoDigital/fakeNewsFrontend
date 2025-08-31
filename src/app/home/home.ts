@@ -6,10 +6,11 @@ import { CardInstructions } from "../components/card-instructions/card-instructi
 import { Widget } from '../components/widget/widget';
 import { AdsCard } from '../components/ads-card/ads-card';
 import{ Footer } from '../layout/footer/footer';
+import { Criptomonedas } from '../components/criptomonedas/criptomonedas';
 
 @Component({
   selector: 'app-home',
-  imports: [Header, NewsVerifier, VerifiedNews, CardInstructions,AdsCard, Widget, Footer],
+  imports: [Header, NewsVerifier, VerifiedNews, CardInstructions,AdsCard, Widget, Footer, Criptomonedas],
   templateUrl: './home.html',
   styleUrl: './home.scss'
 })

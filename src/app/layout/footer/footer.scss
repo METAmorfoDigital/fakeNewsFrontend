@@ -1,21 +1,19 @@
 .site-footer {
-            width: 100%;
-            max-width: 1200px;
             margin-top: 40px;
             padding: 20px 30px;
-            /* Estilo glassmorphism consistente */
+            
             background: rgba(36, 32, 64, 0.4);
             border: 1px solid rgba(255, 255, 255, 0.1);
             border-radius: 20px;
-            backdrop-filter: blur(15px);
-            -webkit-backdrop-filter: blur(15px);
             box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-            
             display: flex;
             justify-content: space-between;
             align-items: center;
             flex-wrap: wrap; /* Para que se adapte en móviles */
-            gap: 20px;
+            gap:20px;
+        }
+        .logofooter{
+            height: 30px;
         }
 
         .footer-copyright {
@@ -26,6 +24,7 @@
         .footer-socials {
             display: flex;
             gap: 15px;
+            margin-right: 20px;
         }
 
         .footer-socials a {

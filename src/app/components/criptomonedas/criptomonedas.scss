@@ -1,0 +1,54 @@
+.crypto-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+}
+
+.crypto-card {
+  box-sizing: border-box;
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  border-radius: 12px;
+  background-color: #1e1e2f;
+  color: #fff;
+  width: 100%;
+  transition: transform 0.2s;
+  
+}
+
+
+
+.crypto-logo {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+.crypto-info{
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  // border: 2px solid #333;
+
+}
+
+.crypto-info h3 {
+  margin: 0;
+  font-size: 11px;
+}
+
+.crypto-info p {
+  margin: 2px 0;
+  font-size: 11px;
+}
+
+.positive {
+  color: #4caf50;
+}
+
+.negative {
+  color: #f44336;
+}
